@@ -1,0 +1,15 @@
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Potentially large captures and logs
+*.pcap
+*.pcapng
+*.log
+
+# Secrets / local environment
+.env
+*.key
+*.pem
