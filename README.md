@@ -363,6 +363,8 @@ DNS-Threat-Hunter/
 ├── README.md
 ├── .gitignore
 ├── docs/
+├── .github/workflows/
+│   └── detection-tests.yml
 ├── detections/
 │   ├── dns_hunter.py
 │   ├── README.md
