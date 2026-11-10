@@ -361,9 +361,12 @@ The project does not:
 ```text
 DNS-Threat-Hunter/
 ├── README.md
-├── PROJECT_STATUS.md
 ├── .gitignore
 ├── docs/
+├── detections/
+│   ├── dns_hunter.py
+│   ├── README.md
+│   └── tests/
 └── screenshots/
 ```
 
