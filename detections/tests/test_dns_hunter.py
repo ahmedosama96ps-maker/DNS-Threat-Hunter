@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from dns_hunter import detect, parse_logs
+from detections.dns_hunter import detect, parse_logs
 
 
 class DetectionTests(unittest.TestCase):
