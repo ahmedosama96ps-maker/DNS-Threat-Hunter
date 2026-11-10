@@ -1,0 +1,16 @@
+name: DNS detection tests
+on:
+  push:
+  pull_request:
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile Python sources
+        run: python -m compileall -q detections
+      - name: Run synthetic detection unit tests
+        run: python -m unittest discover -s detections/tests -v
